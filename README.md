@@ -104,3 +104,10 @@ default:
 Notes: 
 Cases can match many different patterns, including interval matches, tuples, and casts to a specific type.  
 Matched values in a switch case can be bound to temporary constants or variables for use within the case’s body, and complex matching conditions can be expressed with a ***where*** clause for each case.
+## Optionals
+?
+nil
+Forced unwrapping
+!
+Optional Binding
+binding the result to a temporaty constant "if let"
