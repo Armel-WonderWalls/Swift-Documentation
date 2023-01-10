@@ -1,8 +1,8 @@
 # Swift Documentation
-## What is Swift?
+## 1. What is Swift?
 Swift is the language developed by Apple to replace Objective-C which was criticized for being hard to learn and had weird syntax.  
 It's advertised as "fast, modern, safe and interactive".
-### Objective-C
+#### Objective-C
 ```objective-c
 const int count = 10;
 double price = 23.55;
@@ -13,7 +13,7 @@ NSString *message = [NSString stringWithFormat:@"%@%@", firstMessage, secondMess
 
 NSLog(@"%@", message);
 ```
-### Swift
+#### Swift
 ```swift
 let count = 10
 var price = 23.55
@@ -24,7 +24,7 @@ var message = firstMessage + secondMessage
 
 print(message)
 ```
-## Type Inference
+## 2. Type Inference
 Swift allows us to not specify type when declaring a variable/constant.  
 The compiler can deduce the type by examining the default value of the variable/constant.
 ```swift
