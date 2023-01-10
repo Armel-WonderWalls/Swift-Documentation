@@ -24,3 +24,10 @@ var message = firstMessage + secondMessage
 
 print(message)
 ```
+## Type Inference
+Swift allows us to not specify type when declaring a variable/constant.  
+The compiler can deduce the type by examining the default value of the variable/constant.
+```swift
+var expliciteTypeInteger : Int = 10
+var inferencedTypeIntgeger = 10
+```
