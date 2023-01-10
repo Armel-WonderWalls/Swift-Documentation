@@ -31,3 +31,11 @@ The compiler can deduce the type by examining the default value of the variable/
 var expliciteTypeInteger : Int = 10
 var inferencedTypeIntgeger = 10
 ```
+## 3. String Interpolations
+String interpolations is the recommended way to build a string from multiple types.  
+You wraps the variable for string conversion in parentheses, prefixed by a backslash.
+```swift
+var totalPrice = 9.99
+var typeConversionMessage = "The price of the book is $" + String(totalPrice)
+var stringInterpolationMessage = "The price of the book is $ \(totalPrice)"
+```
