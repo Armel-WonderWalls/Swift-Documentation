@@ -39,8 +39,29 @@ var totalPrice = 9.99
 var typeConversionMessage = "The price of the book is $" + String(totalPrice)
 var stringInterpolationMessage = "The price of the book is $ \(totalPrice)"
 ```
-## 4. Conditional Control Flow
-Here is a list of all the basic control flow statements
+## 4. Control Flow
+List of all the control flow statements
+#### ***for-in*** loop
+```swift
+for item in collection {
+    print("item")
+}
+```
+#### ***while*** loop
+```swift
+while condition {
+    print("print this while condition is true")
+}
+```
+#### ***repeat-while*** loop
+```swift
+repeat {
+    print("print this once, then print this again while condition is true")
+} while condition
+```
+
+## 5. Conditional Control Flow
+List of all the conditional control flow statements
 #### ***if*** statement
 ```swift
 if condition {
