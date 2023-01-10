@@ -39,3 +39,47 @@ var totalPrice = 9.99
 var typeConversionMessage = "The price of the book is $" + String(totalPrice)
 var stringInterpolationMessage = "The price of the book is $ \(totalPrice)"
 ```
+## 4. Conditional Control Flow
+Here is a list of all the basic control flow statements
+#### ***if*** statement
+```swift
+if condition {
+  print("condition is true")
+}
+```
+#### ***if-else*** statement
+```swift
+if condition {
+  print("condition is true")
+} else {
+  print("condition is false")
+}
+```
+#### consecutive ***if-else*** statements
+```swift
+if conditionA {
+  print("conditionA is true")
+} else if {
+  print("conditionB is true")
+} else {
+  print("conditionA and conditionB are false")
+}
+```
+#### ***switch*** statement
+```swift
+switch value {
+case 1:
+  print("value equal 1")
+case 2, 3:
+  print("value equal 2 or 3")
+case 4...6:
+  print("value equal 4, 5 or 6")
+case 7..<10:
+  print("value equal 7, 8 or 9")
+default:
+  print("value is not in the range from 1 to 9.")
+}
+```
+Notes: 
+Cases can match many different patterns, including interval matches, tuples, and casts to a specific type.  
+Matched values in a switch case can be bound to temporary constants or variables for use within the case’s body, and complex matching conditions can be expressed with a ***where*** clause for each case.
