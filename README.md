@@ -105,9 +105,23 @@ Notes:
 Cases can match many different patterns, including interval matches, tuples, and casts to a specific type.  
 Matched values in a switch case can be bound to temporary constants or variables for use within the case’s body, and complex matching conditions can be expressed with a ***where*** clause for each case.
 ## Optionals
-?
-nil
-Forced unwrapping
-!
-Optional Binding
-binding the result to a temporaty constant "if let"
+To use optionals variable you need to implicitly asign type to the variable and adding question mark (?) at the end of it.
+```swift
+var optionalVariable : String?
+```
+An optional variable can either have a value of it's type or being empty ("nil").
+#### Forced unwrapping
+We can use the exclamation mark (!) to force the compiler to use an optional variable.
+```swift
+print(optionalVariable!)
+```
+#### Optional Binding
+Before using an optional variable you need to check if it have a value or if it's empty ("nil").  
+The recommanded way is to use optional binding with the ***if-let*** statement.  
+If `optionalVariable` have a value, the value is asigned to the temporary constant `tempVariable` and used within the code between the brackets.  
+If it has no value, the code between the brackets is ignored.
+```swift
+if let tempVariable = optionalVariable {
+    print("The value is \(tempVariable)"
+}
+```
